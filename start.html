@@ -25,17 +25,30 @@
         <!-- LATEST VERSION OF THE JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+        <!-- HIDE MENU JS FILE -->
+        <script src="js/hideMenu.js" ></script>
+
     </head>
     <body>
         <div id="headerWrapper">
             <header>
-                <h1>Your Lolipop Shop</h1>
-                <h2>Helping you with your daily sugar fix</h2>
+                
+                <hgroup>
+                    <h1>Your Lolipop Shop</h1>
+                    <h2>Helping you with your daily sugar fix</h2>
+                </hgroup>
+
             </header>
         </div> <!-- End  of Header wrapper-->
         <div id="navWrapper">
+                <button id="showPhoneNav">Show Navigation</button>
                 <nav>
-                    Putting navs here
+                    <ul  class="clearfix" id="headernav">
+                        <li class="active"><a href="index.html">START</a></li>
+                        <li><a href="flavours.html">ADD A FLAVOUR</a></li>
+                        <li><a href="schedule.html">SCHEDULE A PARTY</a></li>
+                        <li><a href="store.html">CONTACT US</a></li>
+                    </ul>
                 </nav>
         </div> <!-- End  of Nav wrapper-->
         <div id="contentWrapper">
@@ -45,7 +58,7 @@
         </div> <!-- End  of content wrapper-->
         <div id="footerWrapper">
                 <footer>
-                    Putting footer here
+                    <p>A sample footer</p>
                 </footer>
         </div> <!-- End  of footer wrapper-->
 

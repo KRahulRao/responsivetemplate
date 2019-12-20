@@ -17,3 +17,122 @@ body{
 h1 {
     color: red;
 }
+
+/* HEADER CODE HERE */
+#headerWrapper{
+    background-color: #3B4044;
+    color: white;
+}
+
+header h1{
+    font-size: 2.1em;
+    color: #fff;
+}
+header h2{
+    font-size: 0.7em;
+    font-weight: 300;
+    margin-top: 0.75em;
+    color:#ddd;
+}
+
+/* FOOTER CODE HERE */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* DEFAULT NAVIGATION CODE HERE */
+/*
+
+nav ul {
+    padding:1em 0;
+}
+
+nav ul li{
+     margin: 0 2%;
+     width: 46%;
+     float: left;
+}
+
+nav ul li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgba(0, 0,0,0.15);
+    margin: .2em 0;
+    padding: .8em 0;
+    border-radius: 1em;
+    box-shadow: 1px 1px 4px #000;
+}
+
+nav ul li.active a{
+    background-color: rgba(0, 0,0,0.4);
+} */
+
+
+/* NAVIGATION WITH JQUERY CODE HERE*/
+
+nav ul{
+    border: 1px #ccc solid;
+    border-radius: .5em;
+    margin: 0.5em 2%;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+#navWrapper{
+    background-color: #e61b10;
+    padding: .75em 2%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-top: 1px #ccc solid;
+    padding: .6em;
+    color: #000;
+    font-weight: 600;
+}
+
+nav ul li:first-child a{
+    border-top: none;
+}
+
+nav ul li.active a{
+    color: #ff7200;
+}
+
+/* OTHER STUFF */
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+button#showPhoneNav{
+    border: thin solid #222;
+    color:#fff;
+    font-weight: 600;
+    display:block;
+    border-radius: 1.5em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: .75em 0;
+    width:100%;
+}
+
+ul#headernav{
+    display: none;
+}
+
+hgroup h1{
+    padding: 0.5em 2%;
+}
+
+hgroup h2{
+    padding: 0.5em 2%;
+}
