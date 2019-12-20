@@ -10,8 +10,10 @@
     nav ul li a{
 
     } */
-    /* NAVIGATION WITH JQUERY */
 
+
+    /* NAVIGATION WITH JQUERY */
+/* 
     #navWrapper{
         padding: 0;
     }
@@ -42,6 +44,54 @@
     nav ul li.active a{
         color: #fff !important;
         background-color: #ff7200;
+    } */
+
+    /* NAVIGATION USING SUCKERFISH FOR DESKTOP */
+
+    nav select{
+        display: none;
+    }
+    nav{
+        padding: 0;
+    }
+    nav ul{
+        display: block;
+        margin-left:2%;
+        border-left: solid 1px rgba(255,255,255,0.3);
+    }
+    
+    /* Float menu Items side by side */
+    nav ul li{
+        float: left;
+    }
+    nav ul li a{
+        display: block;
+        color: #fff;
+        border-left: solid 1px rgba(255,255,255,0.3);
+        font-size: 0.9em;
+        text-decoration: none;
+        padding:0.7em 0.9em;
+    }
+    nav ul li.active > a{
+        background-color: #ff7200;
+    }
+
+    /* Rules for sub menu  items */
+    nav ul li ul{
+        z-index: 99;
+        position: absolute;
+        left: -999em;
+        margin:0;
+        width: 10em;
+        background-color: #b00;
+    }
+    nav ul li:hover ul{
+        left:auto;
+    }
+    nav ul li ul li{
+        float: none;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+        border-right: none;
     }
 
 } /* End of media query */

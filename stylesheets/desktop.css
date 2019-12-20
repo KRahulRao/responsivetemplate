@@ -2,4 +2,11 @@
     h1{
         color:green;
     }
+    /*Navigation code for suckerfish */
+    nav ul li a{
+        transition: background 0.3s linear;
+    }
+    nav ul li a:hover{
+        background-color: rgba(0,0,0,0.2);
+    }
 } /* End of media query */

@@ -5,7 +5,7 @@
          <title>This is sample</title>
 
          <!-- LOADED FONTS FOR THE PAGE-->
-         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet"> -->
 
 
          <link href="stylesheets/reset.css" rel="stylesheet"/>
@@ -23,11 +23,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">     
 
         <!-- LATEST VERSION OF THE JQUERY -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/library/jquery.min.js"></script>
 
         <!-- HIDE MENU JS FILE -->
         <script src="js/hideMenu.js" ></script>
-
+        
+        <!--LOAD THE SCRIPT FOR OPTION?SELECT-->
+        <script src="js/optionSelectMenu.js"></script>
     </head>
     <body>
         <div id="headerWrapper">
@@ -41,11 +43,20 @@
             </header>
         </div> <!-- End  of Header wrapper-->
         <div id="navWrapper">
-                <button id="showPhoneNav">Show Navigation</button>
+                <!-- Code for showing and hiding menu items -->
+                <!-- <button id="showPhoneNav">Show Navigation</button> -->
                 <nav>
                     <ul  class="clearfix" id="headernav">
-                        <li class="active"><a href="index.html">START</a></li>
-                        <li><a href="flavours.html">ADD A FLAVOUR</a></li>
+                        <li ><a href="index.html">START</a></li>
+                        <li class="active"><a href="flavours.html">ADD A FLAVOUR</a>
+                        <!-- Code for sub menu also known as the sucker fish menu items-->
+                        <ul>
+                            <li><a href="flavours.html">Strawberry</a></li>
+                            <li><a href="flavours.html">Orange</a></li>
+                            <li><a href="flavours.html">Blueberry</a></li>
+                            <li><a href="flavours.html">Vanilla</a></li>
+                        </ul>
+                        </li>
                         <li><a href="schedule.html">SCHEDULE A PARTY</a></li>
                         <li><a href="store.html">CONTACT US</a></li>
                     </ul>

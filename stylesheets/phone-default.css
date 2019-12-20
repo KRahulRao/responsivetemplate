@@ -75,7 +75,7 @@ nav ul li.active a{
 
 /* NAVIGATION WITH JQUERY CODE HERE*/
 
-nav ul{
+/* nav ul{
     border: 1px #ccc solid;
     border-radius: .5em;
     margin: 0.5em 2%;
@@ -83,10 +83,6 @@ nav ul{
     cursor: pointer;
 }
 
-#navWrapper{
-    background-color: #e61b10;
-    padding: .75em 2%;
-}
 
 nav ul li a{
     text-decoration: none;
@@ -104,16 +100,7 @@ nav ul li:first-child a{
 
 nav ul li.active a{
     color: #ff7200;
-}
-
-/* OTHER STUFF */
-
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
+} 
 button#showPhoneNav{
     border: thin solid #222;
     color:#fff;
@@ -127,6 +114,38 @@ button#showPhoneNav{
 
 ul#headernav{
     display: none;
+}
+*/
+
+
+/* NAVIGATION FOR SUCKER FISH MENU */
+
+nav{
+   padding: .3em;
+}
+
+nav ul{
+    display: none;
+}
+
+nav select{
+    display: block;
+    margin: 0 2%;
+    width: 96%;
+}
+
+/* OTHER STUFF */
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* DONOT TOUCH THIS CODE AS IT PROVIDES BACKGROUND COLOR */
+#navWrapper{
+    background-color: #e61b10;
+    padding: .75em 2%;
 }
 
 hgroup h1{
